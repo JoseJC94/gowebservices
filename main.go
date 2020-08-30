@@ -2,7 +2,7 @@ package main
 
 import (
     "google.golang.org/grpc"
-    "github.com/pkg/errors"
+    pb "github.com/JoseJC94/gowebservices/booksapp"
     "log"
     "net"
     "os"
