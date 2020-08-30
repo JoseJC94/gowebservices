@@ -1,1 +1,1 @@
-# gowebservices-WebServiceREST
+# gowebservices

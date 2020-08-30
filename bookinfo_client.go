@@ -2,8 +2,8 @@ package main
 
 import (
 	"context"
-	"google.golang.org/grpc"
 	pb "github.com/JoseJC94/gowebservices/booksapp"
+	"google.golang.org/grpc"
 	"log"
 	"os"
 	"time"
@@ -20,23 +20,29 @@ func main() {
 
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
-	r, err := c.AddBook(ctx, &pb.Book{
-		Id:        "1",
-		Title:     "Operating System Concepts",
-		Edition:   "9th",
-		Copyright: "2012",
-		Language:  "ENGLISH",
-		Pages:     "976",
-		Author:    "Abraham Silberschatz",
-		Publisher: "John Wiley & Sons"})
-	if err != nil {
-		log.Fatalf("Could not add book: %v", err)
+
+	readData("books.csv")
+
+	for _, currentBook := range books {
+		r, err := c.AddBook(ctx, &pb.Book{
+			Id:        currentBook.Id,
+			Title:     currentBook.Title,
+			Edition:   currentBook.Edition,
+			Copyright: currentBook.Copyright,
+			Language:  currentBook.Language,
+			Pages:     currentBook.Pages,
+			Author:    currentBook.Author,
+			Publisher: currentBook.Publisher})
+		if err != nil {
+			log.Fatalf("Could not add book: %v", err)
+		}
+
+		log.Printf("Book ID: %s added successfully", r.Value)
+		book, err := c.GetBook(ctx, &pb.BookID{Value: r.Value})
+		if err != nil {
+			log.Fatalf("Could not get book: %v", err)
+		}
+		log.Printf("Book: ", book.String())
 	}
 
-	log.Printf("Book ID: %s added successfully", r.Value)
-	book, err := c.GetBook(ctx, &pb.BookID{Value: r.Value})
-	if err != nil {
-		log.Fatalf("Could not get book: %v", err)
-	}
-	log.Printf("Book: ", book.String())
 }

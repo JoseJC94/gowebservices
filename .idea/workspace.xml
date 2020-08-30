@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="318b4f51-6f34-46ae-8cb6-1bbfe85a86fb" name="Default Changelist" comment="" />
+    <list default="true" id="318b4f51-6f34-46ae-8cb6-1bbfe85a86fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/inputOutput.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookinfo_client.go" beforeDir="false" afterPath="$PROJECT_DIR$/bookinfo_client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booksapp/books_info.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/booksapp/books_info.pb.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +58,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gowebservices-WebServiceREST" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Go" />
   </component>
   <component name="RecentsManager">
@@ -119,6 +125,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="576" y="224" key="EnvironmentVariablesDialog/0.0.1366.728@0.0.1366.728" timestamp="1598748450872" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1598824917637">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598824917637" />
     <state width="1286" height="223" key="GridCell.Tab.0.bottom" timestamp="1598659697754">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
