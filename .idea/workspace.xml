@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="318b4f51-6f34-46ae-8cb6-1bbfe85a86fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/inputOutput.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookinfo_client.go" beforeDir="false" afterPath="$PROJECT_DIR$/bookinfo_client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booksapp/books_info.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/booksapp/books_info.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/books.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
