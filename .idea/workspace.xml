@@ -24,11 +24,10 @@
   <component name="ChangeListManager">
     <list default="true" id="318b4f51-6f34-46ae-8cb6-1bbfe85a86fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookinfo_client.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookinfo_client.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookinfo_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/bookinfo_service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/booksapp/books_info.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/booksapp/books_info.pb.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/booksapp/books_info.proto" beforeDir="false" afterPath="$PROJECT_DIR$/booksapp/books_info.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inputOutput.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/inputOutput.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/bookinfo_client.go" beforeDir="false" afterPath="$PROJECT_DIR$/client/bookinfo_client.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +90,15 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build bookinfo_service.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gowebservices-WebServiceREST" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/bookinfo_service.go" />
+      <package value="github.com/JoseJC94/gowebservices-WebServiceREST" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build github.com/JoseJC94/gowebservices/client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gowebservices-WebServiceREST" />
       <working_directory value="$PROJECT_DIR$" />
@@ -116,10 +124,12 @@
       <item itemvalue="Go Build.go build bookinfo_client.go inputOutput.go2" />
       <item itemvalue="Go Build.go build github.com/JoseJC94/gowebservices/client" />
       <item itemvalue="Go Test.go test github.com/JoseJC94/gowebservices-WebServiceREST" />
+      <item itemvalue="Go Build.go build bookinfo_service.go" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build github.com/JoseJC94/gowebservices/client" />
+        <item itemvalue="Go Build.go build bookinfo_service.go" />
         <item itemvalue="Go Build.go build bookinfo_client.go inputOutput.go2" />
       </list>
     </recent_temporary>
@@ -148,9 +158,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="475" y="197" key="#Go_Modules/0.0.1366.728@0.0.1366.728" timestamp="1598748454240" />
-    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598832572711">
+    <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599013482581">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="137" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1599013482581" />
     <state x="137" y="0" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1598832572711" />
     <state x="423" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598722730387">
       <screen x="0" y="0" width="1366" height="728" />
@@ -160,9 +171,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="69" key="#com.intellij.ide.macro.MacrosDialog/0.0.1366.728@0.0.1366.728" timestamp="1598832559787" />
-    <state width="592" height="456" key="DebuggerActiveHint" timestamp="1598832088915">
+    <state width="592" height="456" key="DebuggerActiveHint" timestamp="1599013674458">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="592" height="456" key="DebuggerActiveHint/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1599013674458" />
     <state width="592" height="456" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1598832088915" />
     <state x="576" y="224" key="EnvironmentVariablesDialog" timestamp="1598748450872">
       <screen x="0" y="0" width="1366" height="728" />
@@ -173,37 +185,45 @@
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1599003320046" />
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598831106834" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1598850426991">
+    <state width="1323" height="193" key="GridCell.Tab.0.bottom" timestamp="1599014381914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="193" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1599014381914" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598850426991" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1598850426991">
+    <state width="1323" height="193" key="GridCell.Tab.0.center" timestamp="1599014381914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="193" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1599014381914" />
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598850426991" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1598850426991">
+    <state width="1323" height="193" key="GridCell.Tab.0.left" timestamp="1599014381914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="193" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1599014381914" />
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598850426991" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1598850426991">
+    <state width="1323" height="193" key="GridCell.Tab.0.right" timestamp="1599014381914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="193" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1599014381914" />
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598850426991" />
-    <state width="1323" height="243" key="GridCell.Tab.1.bottom" timestamp="1598850426829">
+    <state width="1323" height="221" key="GridCell.Tab.1.bottom" timestamp="1599013735636">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="221" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1599013735636" />
     <state width="1323" height="243" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598850426829" />
-    <state width="1323" height="243" key="GridCell.Tab.1.center" timestamp="1598850426829">
+    <state width="1323" height="221" key="GridCell.Tab.1.center" timestamp="1599013735636">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="221" key="GridCell.Tab.1.center/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1599013735636" />
     <state width="1323" height="243" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1598850426829" />
-    <state width="1323" height="243" key="GridCell.Tab.1.left" timestamp="1598850426829">
+    <state width="1323" height="221" key="GridCell.Tab.1.left" timestamp="1599013735636">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="221" key="GridCell.Tab.1.left/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1599013735636" />
     <state width="1323" height="243" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1598850426829" />
-    <state width="1323" height="243" key="GridCell.Tab.1.right" timestamp="1598850426829">
+    <state width="1323" height="221" key="GridCell.Tab.1.right" timestamp="1599013735636">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="221" key="GridCell.Tab.1.right/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1599013735636" />
     <state width="1323" height="243" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1598850426829" />
     <state x="365" y="18" key="SettingsEditor" timestamp="1598832642254">
       <screen x="0" y="0" width="1366" height="728" />
@@ -233,8 +253,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/client/bookinfo_client.go</url>
-          <line>92</line>
+          <line>106</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/client/bookinfo_client.go</url>
+          <line>44</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

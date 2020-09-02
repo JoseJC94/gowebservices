@@ -6,7 +6,6 @@ import "google/protobuf/empty.proto";
 service BookInfo {
   rpc addBook(Book) returns (BookID);
   rpc getBook(BookID) returns (Book);
-  rpc getBooks(google.protobuf.Empty) returns (stream Book);
   rpc deleteBook(BookID) returns (BookID);
   rpc updateBook(Book) returns (BookID);
 }

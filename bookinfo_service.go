@@ -34,7 +34,7 @@ func (s *server) GetBook(ctx context.Context, in *pb.BookID) (*pb.Book, error) {
 	return nil, status.Errorf(codes.NotFound, "Book does not exist.", in.Value)
 }
 
-func (s *server) GetAllBooks(ctx context.Context) ( map[string]*pb.Book, error){
+func (s *server) GetBooks(ctx context.Context) ( map[string]*pb.Book, error){
 	return s.bookMap, nil
 }
 

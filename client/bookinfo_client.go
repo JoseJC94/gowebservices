@@ -25,41 +25,55 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
 
-	r, err := c.AddBook(ctx, &pb.Book{
-		Id:        "100",
-		Title:     "Sample Book",
-		Edition:   "1st",
-		Copyright: "2020",
-		Language:  "ENGLISH",
-		Pages:     "420",
-		Author:    "Gustavo Adolfo Marquez",
-		Publisher: "Downtown Publisher"})
+	println("\nAdding sample book ")
+
+	addingBook :=
+		&pb.Book{
+			Id:        "100",
+			Title:     "Sample Book",
+			Edition:   "1st",
+			Copyright: "2020",
+			Language:  "ENGLISH",
+			Pages:     "420",
+			Author:    "Gustavo Adolfo Marquez",
+			Publisher: "Downtown Publisher"}
+
+	r, err := c.AddBook(ctx, addingBook)
 	if err != nil {
 		log.Fatalf("Could not add book: %v", err)
 	}
-
 	log.Printf("Book ID: %s added successfully", r.Value)
 
 	book, err := c.GetBook(ctx, &pb.BookID{Value: r.Value})
 	if err != nil {
 		log.Fatalf("Could not get book: %v", err)
 	}
-	log.Printf("Book: ", book.String())
+	log.Printf("Book information: ", book.String())
+
+	book.Publisher = "Updated publisher"
+	book.Edition = "2nd"
 
 	//Update
 	u, err2 := c.UpdateBook(ctx, book)
 	if err2 != nil {
 		log.Fatalf("Could not update book: %v", err2)
 	}
-	log.Printf("Book ID: %s updated successfully", u.Value)
+	log.Printf("\n\nBook ID: %s updated successfully", u.Value)
+	book3, err := c.GetBook(ctx, &pb.BookID{Value: r.Value})
+	if err != nil {
+		log.Fatalf("Could not get book: %v", err)
+	}
+	log.Printf("Book information: ", book3.String())
 
 	//delete
 	book1, err2 := c.DeleteBook(ctx, &pb.BookID{Value: r.Value})
 	if err2 != nil {
 		log.Fatalf("Could not get book: %v", err2)
 	}
-	log.Printf("Deleted Book: ", book1.String())
-	
+	log.Printf("\n\nDeleted Book: ", book1.String())
+
+	println("\n Adding from csv and showing them \n")
+
 	readData("books.csv")
 
 	for i, _ := range books {
