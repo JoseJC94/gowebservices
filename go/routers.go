@@ -55,6 +55,48 @@ var routes = Routes{
 	},
 
 	Route{
+		"AuthorsAuthorIdDelete",
+		strings.ToUpper("Delete"),
+		"/authors/{authorId}",
+		AuthorsAuthorIdDelete,
+	},
+
+	Route{
+		"AuthorsAuthorIdGet",
+		strings.ToUpper("Get"),
+		"/authors/{authorId}",
+		AuthorsAuthorIdGet,
+	},
+
+	Route{
+		"AuthorsGet",
+		strings.ToUpper("Get"),
+		"/authors/",
+		AuthorsGet,
+	},
+
+	Route{
+		"AuthorsBookGet",
+		strings.ToUpper("Get"),
+		"/authors/{authorId}/books",
+		AuthorsBooksGet,
+	},
+
+	Route{
+		"AuthorsAuthorIdPut",
+		strings.ToUpper("Put"),
+		"/authors/{authorId}",
+		AuthorsAuthorIdPut,
+	},
+
+	Route{
+		"AuthorsPost",
+		strings.ToUpper("Post"),
+		"/authors/",
+		AuthorsPost,
+	},
+
+	Route{
 		"BooksBookIdDelete",
 		strings.ToUpper("Delete"),
 		"/books/{bookId}",
@@ -69,6 +111,13 @@ var routes = Routes{
 	},
 
 	Route{
+		"BooksGet",
+		strings.ToUpper("Get"),
+		"/books/",
+		BooksGet,
+	},
+
+	Route{
 		"BooksBookIdPut",
 		strings.ToUpper("Put"),
 		"/books/{bookId}",
@@ -80,5 +129,47 @@ var routes = Routes{
 		strings.ToUpper("Post"),
 		"/books/",
 		BooksPost,
+	},
+
+	Route{
+		"PublishersPost",
+		strings.ToUpper("Post"),
+		"/publishers/",
+		PublishersPost,
+	},
+
+	Route{
+		"PublishersPublisherIdDelete",
+		strings.ToUpper("Delete"),
+		"/publishers/{publisherId}",
+		PublishersPublisherIdDelete,
+	},
+
+	Route{
+		"PublishersPublisherIdGet",
+		strings.ToUpper("Get"),
+		"/publishers/{publisherId}",
+		PublishersPublisherIdGet,
+	},
+
+	Route{
+		"PublishersGet",
+		strings.ToUpper("Get"),
+		"/publishers/",
+		PublishersGet,
+	},
+
+	Route{
+		"PublishersBookGet",
+		strings.ToUpper("Get"),
+		"/publishers/{publisherId}/books",
+		PublishersBooksGet,
+	},
+
+	Route{
+		"PublishersPublisherIdPut",
+		strings.ToUpper("Put"),
+		"/publishers/{publisherId}",
+		PublishersPublisherIdPut,
 	},
 }

@@ -9,7 +9,7 @@
 package main
 
 import (
-	sw "github.com/JoseJC94/gowebservices/go"
+	sw "github.com/JoseJC94/gowebservices/go/go"
 	"log"
 	"net/http"
 	"os"

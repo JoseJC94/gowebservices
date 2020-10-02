@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/gowebservices-WebServiceREST.iml" filepath="$PROJECT_DIR$/.idea/gowebservices-WebServiceREST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/gowebservices.iml" filepath="$PROJECT_DIR$/.idea/gowebservices.iml" />
     </modules>
   </component>
 </project>

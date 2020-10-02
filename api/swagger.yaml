@@ -7,6 +7,7 @@ servers:
 - url: http://webservice_booksapps.netlify.org
   description: web service published on netlify
 paths:
+  #books
   /books/{bookId}:
     get:
       summary: Returns a book by ID.
@@ -101,3 +102,173 @@ components:
         language: ENGLISH
         title: Database System
         bookId: book01
+    Publisher:
+      type: object
+      properties:
+        publisherId:
+          type: string
+        name:
+          type: string
+        country:
+          type: string
+        founded:
+          type: string
+        genre:
+          type: string
+      example:
+        publisherId: Mc Graw Hill
+        name: "Mc Graw Hill"
+        mationality: "American"
+        founded: "11/10/1998"
+        genre: "Comedy"
+    Author:
+      type: object
+      properties:
+        authorId:
+          type: string
+        name:
+          type: string
+        mationality:
+          type: string
+        birth:
+          type: string
+        genre:
+          type: string
+      example:
+        authorId: Silbertzhz
+        name: "Silbertzhz"
+        mationality: "Cuban"
+        birth: "22/10/1990"
+        genre: "Comedy"
+  #authors
+  /authors/{authorId}:
+    get:
+      summary: Returns a author by ID.
+      parameters:
+        - name: authorId
+          in: path
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Author'
+    put:
+      summary: Update author information
+      parameters:
+        - name: authorId
+          in: path
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+      requestBody:
+        description: Author data
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Author'
+        required: true
+      responses:
+        "200":
+          description: OK
+    delete:
+      summary: Delete a author by ID.
+      parameters:
+        - name: authorId
+          in: path
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+    /authors/:
+      post:
+        summary: Create a new author
+        requestBody:
+          description: Author data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Author'
+          required: true
+        responses:
+          "200":
+            description: OK
+  #publishers
+  /publishers/{publisherId}:
+    get:
+      summary: Returns a publisher by ID.
+      parameters:
+        - name: publisherId
+          in: path
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Publisher'
+    put:
+      summary: Update publisher information
+      parameters:
+        - name: publisherId
+          in: path
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+      requestBody:
+        description: Publisher data
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Publisher'
+        required: true
+      responses:
+        "200":
+          description: OK
+    delete:
+      summary: Delete a publisher by ID.
+      parameters:
+        - name: publisherId
+          in: path
+          required: true
+          style: simple
+          explode: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+    /publishers/:
+      post:
+        summary: Create a new publisher
+        requestBody:
+          description: Publisher data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Publisher'
+          required: true
+        responses:
+          "200":
+            description: OK
+  components:
+    schemas:
